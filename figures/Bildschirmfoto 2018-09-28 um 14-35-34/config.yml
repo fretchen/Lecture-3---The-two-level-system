@@ -1,0 +1,20 @@
+---
+version: 2
+multicolumn: false
+web-width: 500px
+align: center
+float: h!
+grid:
+  rows: 1
+  columns: 1
+  grid_elements:
+  - path: figures/Bildschirmfoto 2018-09-28 um 14-35-34/Bildschirmfoto 2018-09-28
+      um 14-35-34.png
+    type: static
+    from:
+    - 1
+    - 1
+    to:
+    - 1
+    - 1
+    url: "/users/143341/articles/326444/master/file/figures/Bildschirmfoto%202018-09-28%20um%2014-35-34/Bildschirmfoto%202018-09-28%20um%2014-35-34.png"
