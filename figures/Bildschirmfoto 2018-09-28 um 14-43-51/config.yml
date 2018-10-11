@@ -8,8 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/Bildschirmfoto 2018-09-28 um 14-43-51/Bildschirmfoto 2018-09-28
-      um 14-43-51.png
+  - path: figures/Bildschirmfoto 2018-09-28 um 14-43-51/RabiOscillation.png
     type: static
     from:
     - 1
@@ -17,6 +16,6 @@ grid:
     to:
     - 1
     - 1
-    url: "/users/143341/articles/326444/master/file/figures/Bildschirmfoto%202018-09-28%20um%2014-43-51/Bildschirmfoto%202018-09-28%20um%2014-43-51.png"
     folder_url: "/users/143341/articles/326444/master/folder/figures/Bildschirmfoto
       2018-09-28 um 14-43-51"
+    url: "/users/143341/articles/326444/master/file/figures/Bildschirmfoto%202018-09-28%20um%2014-43-51/RabiOscillation.png"
