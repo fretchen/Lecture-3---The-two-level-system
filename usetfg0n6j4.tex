@@ -1,0 +1,38 @@
+Two-level systems are also used excessively in information technology.
+How do we induce dynamics, i.e., population transfer between the two levels $\ket{1}$ and $\ket{2}$? The time evolution is merely
+		\begin{align}
+			a_1\ket{1}\eexp{-i{E_1 t}/{\hbar}} + a_2\ket{2}\eexp{-i{E_2 t}/{\hbar}},
+		\end{align}
+		so that the occupation probabilities stay the same. 
+		
+		So far, we described the system in an eigenbasis of the Hamiltonian.
+		If we choose a Hamiltonian which is not diagonal in the basis of interest, we will get a transfer of population between the two states.
+
+\textbf{Example.}
+\begin{align}
+ H=\frac{\hbar}{2}\Omega_x(\ket{2}\bra{1} + \ket{1}\bra{2}),
+\end{align}
+where $\Omega_x$ is the Rabi frequency.
+
+\textbf{Note.} Sometimes it can be helpful to work in the Heisenberg picture, where the time evolution is added to the operators describing observables rather than state kets:
+
+\begin{align}
+	\hat{A}_H=\eexp{i{\hat{H} t}/{\hbar}} \hat{A}_S \eexp{-i{\hat{H} t}/{\hbar}}
+\end{align}
+where $\eexp{-i{\hat{H} t}/{\hbar}}$ is a time evolution operator (N.B.: $\hat{H}_S = \hat{H}_H$). The time evolution of $\hat{A}_H$ is:
+\begin{align}
+ \notag \frac{d}{dt} \hat{A}_H &= \frac{i}{\hbar}\hat{H}\eexp{i{\hat{H}t}/{\hbar}}\hat{A}_S \eexp{-i{\hat{H} t}/{\hbar}}-\frac{i}{\hbar} \eexp{i{\hat{H} t}/{\hbar}}\hat{A}_S \eexp{-i{\hat{H}t}/{\hbar}}\hat{H}+\partial_t\hat{A}_H\\
+&= \frac{i}{\hbar}\left[\hat{H},\hat{A}_H\right] + \eexp{i{\hat{H}t}/{\hbar}}\partial_t\hat{A}_S\eexp{-i{\hat{H}t}/{\hbar}}
+ \end{align}
+
+In the Heisenberg picture the state vectors are time-in\-de\-pen\-dent:
+\begin{align}
+	\ket{\psi}_H \equiv \ket{\psi(t=0)}=\eexp{i{\hat{H}}t/{\hbar}} \ket{\psi(t)}.
+\end{align}
+Therefore, the results of measurements are the same in both pictures:
+\begin{align}
+\bra{\psi(t)}\hat{A}\ket{\psi(t)} = \bra{\psi}_H \hat{A}_H \ket{\psi}_H.
+\end{align}
+For example, applying this to the spin operators yields:
+\begin{align}						\frac{d}{dt}\hat{s}_{i,H}=\frac{i}{\hbar}\left[\hat{H},\hat{s}_{i,H}\right].
+\end{align}
