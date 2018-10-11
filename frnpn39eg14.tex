@@ -22,3 +22,43 @@ If we apply $\hat{H}_0$ to the arbitrary state, we get:
 			\begin{align}
 				\left( \begin{array}{cc} \bra{\varphi_1}\hat{H}_0\ket{\varphi_1} & \bra{\varphi_1}\hat{H}_0\ket{\varphi_2} \\ \bra{\varphi_2}\hat{H}_0\ket{\varphi_1} & \bra{\varphi_2}\hat{H}_0\ket{\varphi_2} \end{array} \right)\left( \begin{array}{c} \braket{\varphi_1 | \phi} \\ \braket{\varphi_2|\phi} \end{array} \right).
 			\end{align}
+		\subsection{External Perturbation $\hat{W}$}
+
+			We obtain the perturbed Hamiltonian $\hat{H}$ by adding a small, external perturbation  $\hat{W}$ to the unperturbed Hamiltonian:
+			\begin{align} \label{eq:perturbedhamiltonian}
+				\hat{H} = \hat{H}_0 + \hat{W}.
+			\end{align}
+			The eigenstates of the perturbed Hamiltonian will then be:
+			\begin{align}
+				\hat{H}\ket{\psi_{\pm}}=E_\pm \ket{\psi_\pm}.
+			\end{align}
+
+		\subsection{Static Properties}
+
+			In the unperturbed basis $\left\{\ket{\varphi_1},\ket{\varphi_2}\right\}$ we get
+
+			\begin{align}
+				\hat{H} = \left(\begin{array}{cc} \tilde{E_1} & W_{12} \\ W^*_{12} & \tilde{E_2}\end{array}\right) \quad \text{with} \quad \tilde{E_i} = E_i + W_{ii}
+			\end{align}
+			for the perturbed Hamiltonian. Diagonalizing this Hermitian matrix yields
+			\begin{align}\label{eq:Epm}
+				E_\pm = \frac{1}{2}\left(\tilde{E_1}+\tilde{E_2}\right) \pm \frac{1}{2} \sqrt{\left(\tilde{E}_1-\tilde{E}_2\right)^2+4 \left|W_{12}\right|^2}
+			\end{align}
+			for the eigenenergies. The corresponding eigenvectors are:
+			\begin{align}
+				\ket{\psi_+}&=&\hspace{-2mm}&\cos\left(\frac{\theta}{2}\right) \eexp{-i{\varphi}/{2}}\ket{\varphi_1}+\sin\left(\frac{\theta}{2}\right) \eexp{i{\varphi}/{2}}\ket{\varphi_2}, \label{eq:staticpsiplus} \\ 
+				\ket{\psi_-}&=&\hspace{-2mm}-&\sin\left(\frac{\theta}{2}\right) \eexp{-i{\varphi}/{2}}\ket{\varphi_1}+\cos\left(\frac{\theta}{2}\right) \eexp{i{\varphi}/{2}}\ket{\varphi_2}, \label{eq:staticpsiminus}
+			\end{align}
+			where 
+			\begin{align} \label{eq:parameters}
+				\tan(\theta) = \frac{2|W_{12}|}{\tilde{E}_1-\tilde{E}_2} \quad \text{and} \quad W_{12} \equiv |W_{12}|\cdot \eexp{-i\varphi}.
+			\end{align}
+			For the further discussion we define:
+\begin{align}
+	E_m \equiv \frac{1}{2}\left(\tilde{E}_1+\tilde{E}_2\right),\\
+	\Delta \equiv \frac{1}{2}\left(\tilde{E}_1-\tilde{E}_2\right),
+\end{align}
+so that \eqref{eq:Epm} becomes:
+\begin{align}
+	E_\pm = E_m \pm \sqrt{\Delta^2+|W_{12}|^2}.
+\end{align}
