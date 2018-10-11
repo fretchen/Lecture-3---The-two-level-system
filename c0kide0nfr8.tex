@@ -23,27 +23,3 @@ If we would only prepare eigenstates the system would be rather boring. However,
 
 
 
-Such an arbitrary state then reads in general:
-\begin{align}
- \ket{\phi} = \left( \begin{array}{c} c_1 \\ c_2 \end{array} \right) = \left( \begin{array}{c} \braket{\varphi_1|\phi} \\ \braket{\varphi_2|\phi} \end{array} \right)
-\end{align}
-and it can be expressed in terms of the eigenstates of the Hamiltonian:
-\begin{align}
-	\ket{\phi} = \sum_i c_i \ket{\varphi_i}.
-\end{align}
-If we apply $\hat{H}_0$ to the arbitrary state, we get:
-
-			\begin{align}
-				\ket{\phi'} &=\hat{H}_0 \ket{\phi}\\ 
-				&= \sum\limits_{i,j} \ket{\varphi_i}\bra{\varphi_i} \hat{H}_0 \ket{\varphi_j}\braket{\varphi_j|\phi}\\
-				&= \sum\limits_i \ket{\varphi_i} \overbrace{\sum\limits_j  \underbrace{\bra{\varphi_i} \hat{H}_0 \ket{\varphi_j} }_{H_{ij}}  \braket{\varphi_j|\phi}}^{c_i'}\\
-				&= \sum_i c_i' \ket{\varphi_i}
-			\end{align}
-			% &= \sum\limits_i \ket{\varphi_i}  \sum\limits_j  \bra{\varphi_i} \hat{H}_0 \ket{\varphi_j}  \braket{\varphi_j|\phi}\\
-			% &= \sum\limits_i \ket{\varphi_i} \sum\limits_j  \underbrace{\bra{\varphi_i} \hat{H}_0 \ket{\varphi_j} }_{H_{ij}}  \braket{\varphi_j|\phi}\\
-			% &= \sum\limits_i \ket{\varphi_i} \overunderbraces{&&\br{1}{H_{ij}}}{& {\sum\limits_j} & \bra{\varphi_i} \hat{H}_0 \ket{\varphi_j} & \braket{\varphi_j|\phi}}{&\br{3}{c_i'}}\\
-			We can also use matrix notation to express $\ket{\phi'}$:
-			\begin{align}
-				\left( \begin{array}{cc} \bra{\varphi_1}\hat{H}_0\ket{\varphi_1} & \bra{\varphi_1}\hat{H}_0\ket{\varphi_2} \\ \bra{\varphi_2}\hat{H}_0\ket{\varphi_1} & \bra{\varphi_2}\hat{H}_0\ket{\varphi_2} \end{array} \right)\left( \begin{array}{c} \braket{\varphi_1 | \phi} \\ \braket{\varphi_2|\phi} \end{array} \right).
-			\end{align}
-
