@@ -2,14 +2,7 @@
 
 While the previous derivation might be the standard one, which certainly leads to the right results it might not be the most intuitive way of thinking about the dynamics. They become actually quite transparent in the spin language and on the Bloch sphere. So let us go back to the formulation of the Hamiltonian in terms of spins as in Eq. \eqref{Eq:HamSpin}.
 
-How would the question of the time evolution from $0$ to $1$ and back go now ? Basically, we would assume that the spin has been initialize into one of the eigenstates of the $z$-basis and now starts to rotate in some magnetic field. How ? This can be nicely studied in the Heisenberg picture, where operators have a time evolution. In the Heisenberg picture we have:
-
-\textbf{Note.} Sometimes it can be helpful to work in the Heisenberg picture, where the time evolution is added to the operators describing observables rather than state kets:
-
-\begin{align}
-	\hat{A}_H=\eexp{i{\hat{H} t}/{\hbar}} \hat{A}_S \eexp{-i{\hat{H} t}/{\hbar}}
-\end{align}
-where $\eexp{-i{\hat{H} t}/{\hbar}}$ is a time evolution operator (N.B.: $\hat{H}_S = \hat{H}_H$). The time evolution of $\hat{A}_H$ is:
+How would the question of the time evolution from $0$ to $1$ and back go now ? Basically, we would assume that the spin has been initialize into one of the eigenstates of the $z$-basis and now starts to rotate in some magnetic field. How ? This can be nicely studied in the Heisenberg picture, where operators have a time evolution. In the Heisenberg picture we have: The time evolution of $\hat{A}_H$ is:
 \begin{align}
  \notag \frac{d}{dt} \hat{A}_H &= \frac{i}{\hbar}\hat{H}\eexp{i{\hat{H}t}/{\hbar}}\hat{A}_S \eexp{-i{\hat{H} t}/{\hbar}}-\frac{i}{\hbar} \eexp{i{\hat{H} t}/{\hbar}}\hat{A}_S \eexp{-i{\hat{H}t}/{\hbar}}\hat{H}+\partial_t\hat{A}_H\\
 &= \frac{i}{\hbar}\left[\hat{H},\hat{A}_H\right] + \eexp{i{\hat{H}t}/{\hbar}}\partial_t\hat{A}_S\eexp{-i{\hat{H}t}/{\hbar}}
