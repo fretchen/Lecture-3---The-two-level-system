@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/BlochSphereWithVectorForLecture/BlochSphereWithVectorForLecture.png
+  - path: figures/BlochSphereWithVectorForLecture/BlochSphereWithVectorForLecture.svg
     type: static
     from:
     - 1
@@ -17,4 +17,4 @@ grid:
     - 1
     - 1
     folder_url: "/users/143341/articles/326444/master/folder/figures/BlochSphereWithVectorForLecture"
-    url: "/users/143341/articles/326444/master/file/figures/BlochSphereWithVectorForLecture/BlochSphereWithVectorForLecture.png"
+    url: "/users/143341/articles/326444/master/file/figures/BlochSphereWithVectorForLecture/BlochSphereWithVectorForLecture.svg"
