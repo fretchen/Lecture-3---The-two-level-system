@@ -1,1 +1,21 @@
-Text
+\subsection{Visualization of the dynamics in the spin picture}
+
+While the previous derivation might be the standard one, which certainly leads to the right results it might not be the most intuitive way of thinking about the dynamics. They become actually quite transparent in the spin language and on the Bloch sphere. So let us go back to the formulation of the Hamiltonian in terms of spins as in Eq. \eqref{Eq:HamSpin}.
+
+How would the question of the time evolution from $0$ to $1$ and back go now ? Basically, we would assume that the spin has been initialize into one of the eigenstates of the $z$-basis and now starts to rotate in some magnetic field. How ? This can be nicely studied in the Heisenberg picture, where operators have a time evolution. In the Heisenberg picture we have:
+\begin{align}
+\frac{d}{dt} \hat{s}_i &= \frac{i}{\hbar}\left[\hat{H},\hat{s}_i\right]\\
+\frac{d}{dt} \hat{s}_i &= \frac{i}{\hbar}\sum_j B_j \left[\hat{s}_j,\hat{s}_i\right]\\
+ \end{align}
+So to understand we time evolution, we only need to employ the commutator relationships between the spins:
+\begin{align}
+[ s_x, s_y] = \hbar is_z~~[ s_y, s_z] = \hbar is_x~~[ s_z, s_x] = \hbar is_y
+\end{align}
+For the specific case of $B_x=\Omega$, $B_y = B_z = 0$, we have then:
+\begin{align}
+\frac{d}{dt} \hat{s}_x &= 0\\
+\frac{d}{dt} \hat{s}_y &= -\Omega \hat{s}_z\\
+\frac{d}{dt} \hat{s}_z &= \Omega \hat{s}_y
+ \end{align}
+ 
+ So applying a field in x-direction leads to a rotation of the spin around the $x$ axis with velocity $\Omega$. We can now use this general picture to understand the dynamics as rotations around an axis, which is defined by the different components of the magnetic field.
